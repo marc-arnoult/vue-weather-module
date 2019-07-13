@@ -18,15 +18,22 @@
     "babel-plugin-transform-runtime": "^6.23.0",
     "babel-preset-env": "^1.7.0",
     "babel-preset-vue-app": "^2.0.0",
+    "bili": "^4.8.0",
+    "hash-sum": "^2.0.0",
     "jest": "^24.8.0",
     "jest-serializer-vue": "^2.0.2",
+    "rollup-plugin-vue": "^5.0.1",
     "vue": "^2.6.10",
     "vue-jest": "^3.0.4",
     "vue-loader": "^15.7.0",
-    "vue-template-compiler": "^2.6.10"
+    "vue-template-compiler": "^2.6.10",
+    "webpack": "^4.35.3",
+    "webpack-ruleset": "^0.1.8"
   },
   "jest": {
-    "setupFiles": ["<rootDir>/node_modules/regenerator-runtime/runtime"],
+    "setupFiles": [
+      "<rootDir>/node_modules/regenerator-runtime/runtime"
+    ],
     "moduleFileExtensions": [
       "js",
       "json",
