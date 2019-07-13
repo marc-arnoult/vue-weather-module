@@ -1,3 +1,7 @@
+/**
+ * @class weatherPayload
+ * @type {Object}
+ */
 export default class {
     /**
      * @param {Object} data 
@@ -16,9 +20,9 @@ export default class {
     }
     /**
      * @param {Object} data 
+     * @returns {weatherPayload}
      */
     static createFromOpenweathermap(data) {
-
         return new this({
             temp: data.main.temp,
             temp_max: data.main.temp_max,
