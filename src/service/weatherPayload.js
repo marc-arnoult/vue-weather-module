@@ -1,4 +1,7 @@
 export default class {
+    /**
+     * @param {Object} data 
+     */
     constructor(data) {
         this.temp = data.temp
         this.temp_max = data.temp_max
@@ -8,6 +11,9 @@ export default class {
             iconPath: data.weather.iconPath
         }
     }
+    /**
+     * @param {Object} data 
+     */
     static createFromOpenweathermap(data) {
         return new this({
             temp: data.main.temp,
