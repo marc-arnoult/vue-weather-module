@@ -1,1 +1,6 @@
+before_script:
+  - echo 'Europe/Paris' | sudo tee /etc/timezone
+  - sudo dpkg-reconfigure --frontend noninteractive tzdata
 language: node_js
+node_js:
+  - "11.12"

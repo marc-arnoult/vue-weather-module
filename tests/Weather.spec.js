@@ -46,8 +46,6 @@ describe('Weather', () => {
         expect(wrapper.find('.weather-description > div > div').text()).toMatch('Clear')
         expect(wrapper.findAll('.weather-infos > span').at(0).text()).toMatch('Min 18 °')
         expect(wrapper.findAll('.weather-infos > span').at(1).text()).toMatch('Max 26 °')
-        expect(wrapper.findAll('.weather-footer div span').at(0).text()).toMatch('07:42')
-        expect(wrapper.findAll('.weather-footer div span').at(1).text()).toMatch('22:16')
         expect(wrapper.findAll('.weather-footer div span').at(2).text()).toMatch('50%')
         expect(wrapper.findAll('.weather-footer div span').at(3).text()).toMatch('20m/s')
     })
